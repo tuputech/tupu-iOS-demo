@@ -9,11 +9,45 @@
 /* Begin PBXBuildFile section */
 		0AAC80671E251215006A97EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80661E251215006A97EC /* main.m */; };
 		0AAC806A1E251215006A97EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80691E251215006A97EC /* AppDelegate.m */; };
-		0AAC806D1E251215006A97EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC806C1E251215006A97EC /* ViewController.m */; };
+		0AAC806D1E251215006A97EC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC806C1E251215006A97EC /* ViewController.mm */; };
 		0AAC80701E251215006A97EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC806E1E251215006A97EC /* Main.storyboard */; };
 		0AAC80721E251215006A97EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80711E251215006A97EC /* Assets.xcassets */; };
 		0AAC80751E251215006A97EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80731E251215006A97EC /* LaunchScreen.storyboard */; };
+		0AAC807E1E25123E006A97EC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC807D1E25123E006A97EC /* Accelerate.framework */; };
+		0AAC80801E251244006A97EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC807F1E251244006A97EC /* OpenGLES.framework */; };
+		0AAC80821E25124A006A97EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80811E25124A006A97EC /* Foundation.framework */; };
+		0AAC80841E25126C006A97EC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80831E25126C006A97EC /* opencv2.framework */; };
+		0AAC80861E25127E006A97EC /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80851E25127E006A97EC /* GPUImage.framework */; };
+		0AAC80881E25129A006A97EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80871E25129A006A97EC /* CoreGraphics.framework */; };
+		0AAC808A1E2512A0006A97EC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80891E2512A0006A97EC /* CoreMedia.framework */; };
+		0AAC808C1E2512A7006A97EC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */; };
+		0AAC80991E251348006A97EC /* SKSticker+OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC808F1E251348006A97EC /* SKSticker+OpenGL.m */; };
+		0AAC809A1E251348006A97EC /* SKSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80911E251348006A97EC /* SKSticker.m */; };
+		0AAC809B1E251348006A97EC /* SKStickerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80931E251348006A97EC /* SKStickerFilter.m */; };
+		0AAC809C1E251348006A97EC /* SKStickerItem+OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80951E251348006A97EC /* SKStickerItem+OpenGL.m */; };
+		0AAC809D1E251348006A97EC /* SKStickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80971E251348006A97EC /* SKStickerItem.m */; };
+		0AAC809E1E251348006A97EC /* SKStickerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80981E251348006A97EC /* SKStickerResources.bundle */; };
+		0AAC80A01E2513AF006A97EC /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AAC80851E25127E006A97EC /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AAC80A21E251518006A97EC /* tupu-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80A11E251518006A97EC /* tupu-sdk.framework */; };
+		0AAC80A41E251538006A97EC /* libTPSDKAuthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80A31E251538006A97EC /* libTPSDKAuthKit.a */; };
+		0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80A81E251572006A97EC /* TPLicenseHandle.m */; };
+		0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */; };
+		0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */; };
+		0AAC80B31E267690006A97EC /* TPLandmarkFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80B21E267690006A97EC /* TPLandmarkFilter.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AAC809F1E2513A6006A97EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AAC80A01E2513AF006A97EC /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AAC80621E251215006A97EC /* TUPUFaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUPUFaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,11 +55,41 @@
 		0AAC80681E251215006A97EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AAC80691E251215006A97EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0AAC806B1E251215006A97EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0AAC806C1E251215006A97EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0AAC806C1E251215006A97EC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		0AAC806F1E251215006A97EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AAC80711E251215006A97EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AAC80741E251215006A97EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AAC80761E251215006A97EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AAC807D1E25123E006A97EC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0AAC807F1E251244006A97EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0AAC80811E25124A006A97EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AAC80831E25126C006A97EC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		0AAC80851E25127E006A97EC /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		0AAC80871E25129A006A97EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AAC80891E2512A0006A97EC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0AAC808E1E251348006A97EC /* SKSticker+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKSticker+OpenGL.h"; sourceTree = "<group>"; };
+		0AAC808F1E251348006A97EC /* SKSticker+OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKSticker+OpenGL.m"; sourceTree = "<group>"; };
+		0AAC80901E251348006A97EC /* SKSticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSticker.h; sourceTree = "<group>"; };
+		0AAC80911E251348006A97EC /* SKSticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSticker.m; sourceTree = "<group>"; };
+		0AAC80921E251348006A97EC /* SKStickerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStickerFilter.h; sourceTree = "<group>"; };
+		0AAC80931E251348006A97EC /* SKStickerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStickerFilter.m; sourceTree = "<group>"; };
+		0AAC80941E251348006A97EC /* SKStickerItem+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKStickerItem+OpenGL.h"; sourceTree = "<group>"; };
+		0AAC80951E251348006A97EC /* SKStickerItem+OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKStickerItem+OpenGL.m"; sourceTree = "<group>"; };
+		0AAC80961E251348006A97EC /* SKStickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStickerItem.h; sourceTree = "<group>"; };
+		0AAC80971E251348006A97EC /* SKStickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStickerItem.m; sourceTree = "<group>"; };
+		0AAC80981E251348006A97EC /* SKStickerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SKStickerResources.bundle; sourceTree = "<group>"; };
+		0AAC80A11E251518006A97EC /* tupu-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "tupu-sdk.framework"; path = "../../../../Library/Developer/Xcode/DerivedData/tupuSDK-akugxkfsvqqfkcfyixtlyxtjouim/Build/Products/Debug-iphoneos/tupu-sdk.framework"; sourceTree = "<group>"; };
+		0AAC80A31E251538006A97EC /* libTPSDKAuthKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTPSDKAuthKit.a; sourceTree = "<group>"; };
+		0AAC80A51E25153F006A97EC /* TPSDKAuthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPSDKAuthKit.h; sourceTree = "<group>"; };
+		0AAC80A71E251572006A97EC /* TPLicenseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLicenseHandle.h; sourceTree = "<group>"; };
+		0AAC80A81E251572006A97EC /* TPLicenseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLicenseHandle.m; sourceTree = "<group>"; };
+		0AAC80A91E251572006A97EC /* TPNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNetConfig.h; sourceTree = "<group>"; };
+		0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = tupu_face_1_0_0.model; sourceTree = "<group>"; };
+		0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		0AAC80B11E267690006A97EC /* TPLandmarkFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLandmarkFilter.h; sourceTree = "<group>"; };
+		0AAC80B21E267690006A97EC /* TPLandmarkFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLandmarkFilter.m; sourceTree = "<group>"; };
+		0AAC80B41E267716006A97EC /* TPFrameProcessingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFrameProcessingProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +97,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAC808C1E2512A7006A97EC /* AssetsLibrary.framework in Frameworks */,
+				0AAC80A21E251518006A97EC /* tupu-sdk.framework in Frameworks */,
+				0AAC808A1E2512A0006A97EC /* CoreMedia.framework in Frameworks */,
+				0AAC80881E25129A006A97EC /* CoreGraphics.framework in Frameworks */,
+				0AAC80821E25124A006A97EC /* Foundation.framework in Frameworks */,
+				0AAC80861E25127E006A97EC /* GPUImage.framework in Frameworks */,
+				0AAC80801E251244006A97EC /* OpenGLES.framework in Frameworks */,
+				0AAC80841E25126C006A97EC /* opencv2.framework in Frameworks */,
+				0AAC807E1E25123E006A97EC /* Accelerate.framework in Frameworks */,
+				0AAC80A41E251538006A97EC /* libTPSDKAuthKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +118,7 @@
 			children = (
 				0AAC80641E251215006A97EC /* TUPUFaceDemo */,
 				0AAC80631E251215006A97EC /* Products */,
+				0AAC807C1E25123E006A97EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +133,18 @@
 		0AAC80641E251215006A97EC /* TUPUFaceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AAC808D1E251348006A97EC /* Sticker */,
 				0AAC80681E251215006A97EC /* AppDelegate.h */,
 				0AAC80691E251215006A97EC /* AppDelegate.m */,
 				0AAC806B1E251215006A97EC /* ViewController.h */,
-				0AAC806C1E251215006A97EC /* ViewController.m */,
-				0AAC806E1E251215006A97EC /* Main.storyboard */,
-				0AAC80711E251215006A97EC /* Assets.xcassets */,
-				0AAC80731E251215006A97EC /* LaunchScreen.storyboard */,
-				0AAC80761E251215006A97EC /* Info.plist */,
+				0AAC806C1E251215006A97EC /* ViewController.mm */,
+				0AAC80A71E251572006A97EC /* TPLicenseHandle.h */,
+				0AAC80A81E251572006A97EC /* TPLicenseHandle.m */,
+				0AAC80A91E251572006A97EC /* TPNetConfig.h */,
 				0AAC80651E251215006A97EC /* Supporting Files */,
+				0AAC80B11E267690006A97EC /* TPLandmarkFilter.h */,
+				0AAC80B21E267690006A97EC /* TPLandmarkFilter.m */,
+				0AAC80B41E267716006A97EC /* TPFrameProcessingProtocol.h */,
 			);
 			path = TUPUFaceDemo;
 			sourceTree = "<group>";
@@ -74,9 +152,59 @@
 		0AAC80651E251215006A97EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */,
+				0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */,
+				0AAC806E1E251215006A97EC /* Main.storyboard */,
+				0AAC80711E251215006A97EC /* Assets.xcassets */,
+				0AAC80731E251215006A97EC /* LaunchScreen.storyboard */,
+				0AAC80761E251215006A97EC /* Info.plist */,
 				0AAC80661E251215006A97EC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AAC807C1E25123E006A97EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC80A61E251546006A97EC /* Auth */,
+				0AAC80A11E251518006A97EC /* tupu-sdk.framework */,
+				0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */,
+				0AAC80891E2512A0006A97EC /* CoreMedia.framework */,
+				0AAC80871E25129A006A97EC /* CoreGraphics.framework */,
+				0AAC80851E25127E006A97EC /* GPUImage.framework */,
+				0AAC80831E25126C006A97EC /* opencv2.framework */,
+				0AAC80811E25124A006A97EC /* Foundation.framework */,
+				0AAC807F1E251244006A97EC /* OpenGLES.framework */,
+				0AAC807D1E25123E006A97EC /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AAC808D1E251348006A97EC /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC808E1E251348006A97EC /* SKSticker+OpenGL.h */,
+				0AAC808F1E251348006A97EC /* SKSticker+OpenGL.m */,
+				0AAC80901E251348006A97EC /* SKSticker.h */,
+				0AAC80911E251348006A97EC /* SKSticker.m */,
+				0AAC80921E251348006A97EC /* SKStickerFilter.h */,
+				0AAC80931E251348006A97EC /* SKStickerFilter.m */,
+				0AAC80941E251348006A97EC /* SKStickerItem+OpenGL.h */,
+				0AAC80951E251348006A97EC /* SKStickerItem+OpenGL.m */,
+				0AAC80961E251348006A97EC /* SKStickerItem.h */,
+				0AAC80971E251348006A97EC /* SKStickerItem.m */,
+				0AAC80981E251348006A97EC /* SKStickerResources.bundle */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		0AAC80A61E251546006A97EC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC80A51E25153F006A97EC /* TPSDKAuthKit.h */,
+				0AAC80A31E251538006A97EC /* libTPSDKAuthKit.a */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +217,7 @@
 				0AAC805E1E251215006A97EC /* Sources */,
 				0AAC805F1E251215006A97EC /* Frameworks */,
 				0AAC80601E251215006A97EC /* Resources */,
+				0AAC809F1E2513A6006A97EC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -138,9 +267,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */,
 				0AAC80751E251215006A97EC /* LaunchScreen.storyboard in Resources */,
 				0AAC80721E251215006A97EC /* Assets.xcassets in Resources */,
 				0AAC80701E251215006A97EC /* Main.storyboard in Resources */,
+				0AAC809E1E251348006A97EC /* SKStickerResources.bundle in Resources */,
+				0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AAC806D1E251215006A97EC /* ViewController.m in Sources */,
+				0AAC80991E251348006A97EC /* SKSticker+OpenGL.m in Sources */,
+				0AAC806D1E251215006A97EC /* ViewController.mm in Sources */,
+				0AAC809A1E251348006A97EC /* SKSticker.m in Sources */,
+				0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */,
+				0AAC809B1E251348006A97EC /* SKStickerFilter.m in Sources */,
+				0AAC809D1E251348006A97EC /* SKStickerItem.m in Sources */,
 				0AAC806A1E251215006A97EC /* AppDelegate.m in Sources */,
+				0AAC80B31E267690006A97EC /* TPLandmarkFilter.m in Sources */,
 				0AAC80671E251215006A97EC /* main.m in Sources */,
+				0AAC809C1E251348006A97EC /* SKStickerItem+OpenGL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +413,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69GDDT3FCQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/drakedan/Library/Developer/Xcode/DerivedData/tupuSDK-akugxkfsvqqfkcfyixtlyxtjouim/Build/Products/Debug-iphoneos/",
+				);
 				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lstdc++",
+					"-Obj-C++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuputech.TUPUFaceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -286,8 +440,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69GDDT3FCQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/drakedan/Library/Developer/Xcode/DerivedData/tupuSDK-akugxkfsvqqfkcfyixtlyxtjouim/Build/Products/Debug-iphoneos/",
+				);
 				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lstdc++",
+					"-Obj-C++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuputech.TUPUFaceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TPLicenseHandle.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // request tupu sdk license.
+//    if ([TPLicenseHandle needLicenseForNet]) {
+//        NSLog(@"request license");
+//        [TPLicenseHandle licenseFromNetworkWithCompletion:^(bool license, NSDate *expire) {
+//            if (license) {
+//                NSLog(@"License request success %@", expire);
+//            }
+//        }];
+//    }
     return YES;
 }
 
