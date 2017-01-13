@@ -7,23 +7,20 @@
 //
 
 #import "ViewController.h"
-#import "SKSticker.h"
-#import "SKStickerFilter.h"
 #import <GPUImage/GPUImageFramework.h>
-#import <tupu-sdk/TUPULandmark.h>
+#import <tupu-sdk/tupu.h>
 #import <opencv2/opencv.hpp>
 #import <opencv2/highgui/ios.h>
-#import "TPFrameProcessingProtocol.h"
-#import "TPLandmarkFilter.h"
 
-@interface ViewController ()<GPUImageVideoCameraDelegate, TPFrameProcessingDelegate>
+@interface ViewController ()<TPRenderingDelegate>
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) GPUImageView *filterView;
 
-@property (nonatomic, strong) SKStickerFilter *stickerFilter;
-@property (nonatomic, copy) NSArray<SKSticker *> *stickers;
+@property (nonatomic, strong) TPStickerFilter *stickerFilter;
+@property (nonatomic, copy) NSArray<TPSticker *> *stickers;
 
 @property (nonatomic, strong) TPLandmarkFilter *landmarkFilter;
+@property (nonatomic, strong) TPBeautifyFilter *beautifyFilter;
 @end
 
 @implementation ViewController{
@@ -39,13 +36,13 @@
         NSLog(@"Failed to initialize model");
         return;
     }
-    
+
     self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionFront];
     self.videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     self.videoCamera.horizontallyMirrorFrontFacingCamera = YES;
-    self.videoCamera.delegate = self;
     
-    self.stickerFilter = [SKStickerFilter new];
+    
+    self.stickerFilter = [TPStickerFilter new];
 
     
     self.filterView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
@@ -54,15 +51,22 @@
     [self.view addSubview:self.filterView];
     
     self.landmarkFilter = [[TPLandmarkFilter alloc] init];
-    self.landmarkFilter.frameDelegate = self;
+    self.landmarkFilter.renderDelegate = self;
+    self.landmarkFilter.debugMode = NO;
     
+    self.beautifyFilter = [[TPBeautifyFilter alloc] init];
     
-    [self.videoCamera addTarget:self.landmarkFilter];
+    [self.videoCamera addTarget: self.beautifyFilter];
+    [self.beautifyFilter addTarget:self.landmarkFilter];
     [self.landmarkFilter addTarget:self.stickerFilter];
     [self.stickerFilter addTarget:self.filterView];
     
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    tapRecognizer.numberOfTapsRequired = 2;
+    [self.filterView addGestureRecognizer:tapRecognizer];
     
-    [SKStickersManager loadStickersWithCompletion:^(NSArray<SKSticker *> *stickers) {
+    
+    [TPStickersManager loadStickersWithCompletion:^(NSArray<TPSticker *> *stickers) {
         self.stickers = stickers;
         self.stickerFilter.sticker = [stickers firstObject];
     }];
@@ -70,23 +74,20 @@
     [self.videoCamera startCameraCapture];
 }
 
-#pragma mark - GPUImageVideoCameraDelegate
-- (void)willOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer{
-    CMFormatDescriptionRef outputFormatDescription = NULL;
-    CMVideoFormatDescriptionCreateForImageBuffer(kCFAllocatorDefault, CMSampleBufferGetImageBuffer(sampleBuffer), &outputFormatDescription);
-    
+- (void) handleTap:(id)sender {
+    self.landmarkFilter.debugMode = !self.landmarkFilter.debugMode;
 }
 
-- (void)willProcessFrame:(GPUImageFramebuffer *)buffer {
+#pragma mark - TPRenderDelegate
+
+- (void)TPRendererWillBeginRender:(GPUImageFramebuffer *)buffer {
     [buffer lock];
-    [buffer lockForReading];
     CVPixelBufferRef pixelBuffer = buffer.pixelBuffer;
     CFRetain(pixelBuffer);
     CMFormatDescriptionRef outputFormatDescription = NULL;
     CMVideoFormatDescriptionCreateForImageBuffer(kCFAllocatorDefault, pixelBuffer, &outputFormatDescription);
     
-    char a[100];
-    UIImage *img = [_tupu getLandmarkFromPixelBuffer:pixelBuffer info:a faceness:0.6f smoothEnable:YES];
+    [_tupu getLandmark:pixelBuffer smoothEnable:YES];
 
     if (_tupu.isFace) {
         self.stickerFilter.faces = @[_tupu.points];
@@ -98,9 +99,12 @@
         self.landmarkFilter.rect = CGRectNull;
     }
     CFRelease(pixelBuffer);
-    [buffer unlockAfterReading];
     [buffer unlock];
 }
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

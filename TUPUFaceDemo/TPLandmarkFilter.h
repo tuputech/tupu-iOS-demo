@@ -7,11 +7,11 @@
 //
 
 #import <GPUImage/GPUImageFramework.h>
-#import "TPFrameProcessingProtocol.h"
+#import "TPRenderingProtocol.h"
 
 @interface TPLandmarkFilter : GPUImageFilter
 
-@property (nonatomic, weak) id<TPFrameProcessingDelegate> frameDelegate;
+@property (nonatomic, weak) id<TPRenderingDelegate> renderDelegate;
 
 @property (nonatomic, strong) NSArray<NSValue*>* faces;
 

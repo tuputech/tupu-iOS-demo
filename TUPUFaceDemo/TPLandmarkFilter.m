@@ -39,11 +39,11 @@ NSString *const kTPLandmarkFragmentShaderString = SHADER_STRING
 
 
 - (void) newFrameReadyAtTime:(CMTime)frameTime atIndex:(NSInteger)textureIndex {
-    if (self.frameDelegate != nil) {
+    if (self.renderDelegate != nil) {
         runAsynchronouslyOnVideoProcessingQueue(^{
             glFinish();
             @synchronized (self) {
-                [self.frameDelegate willProcessFrame:firstInputFramebuffer];
+                [self.renderDelegate TPRendererWillBeginRender:firstInputFramebuffer];
             }
         });
     }
@@ -105,6 +105,16 @@ NSString *const kTPLandmarkFragmentShaderString = SHADER_STRING
     {
         dispatch_semaphore_signal(imageCaptureSemaphore);
     }
+    
+    if (self.renderDelegate != nil && [self.renderDelegate respondsToSelector:@selector(TPRendererDidFinishRender:)]) {
+        glFlush();
+        [outputFramebuffer lock];
+        runAsynchronouslyOnVideoProcessingQueue(^{
+            [self.renderDelegate TPRendererDidFinishRender:outputFramebuffer];
+            [outputFramebuffer unlock];
+        });
+    }
+    
 }
 
 @end
