@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "47811EFDA70CDAB69BE4663AF39659AE5DAFFD4E" : 9223372036854775807,
+    "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FC443430-E0E0-4386-A7D3-C6B3F59BC7B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "47811EFDA70CDAB69BE4663AF39659AE5DAFFD4E" : "tupuSDK\/",
+    "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TUPUFaceDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TUPUFaceDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:DanWu\/tupusdk_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47811EFDA70CDAB69BE4663AF39659AE5DAFFD4E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F"
+    }
+  ]
+}

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <GPUImage/GPUImageFramework.h>
 #import <tupu-sdk/tupu.h>
+#import <TPRenderer/TPRenderer.h>
 #import <opencv2/opencv.hpp>
 #import <opencv2/highgui/ios.h>
 
@@ -80,26 +81,28 @@
 
 #pragma mark - TPRenderDelegate
 
-- (void)TPRendererWillBeginRender:(GPUImageFramebuffer *)buffer {
-    [buffer lock];
-    CVPixelBufferRef pixelBuffer = buffer.pixelBuffer;
-    CFRetain(pixelBuffer);
-    CMFormatDescriptionRef outputFormatDescription = NULL;
-    CMVideoFormatDescriptionCreateForImageBuffer(kCFAllocatorDefault, pixelBuffer, &outputFormatDescription);
-    
-    [_tupu getLandmark:pixelBuffer smoothEnable:YES];
+- (void)TPRenderer:(GPUImageOutput *)renderer WillBeginRender:(GPUImageFramebuffer *)buffer {
+    if (renderer == self.landmarkFilter) {
+        [buffer lock];
+        CVPixelBufferRef pixelBuffer = buffer.pixelBuffer;
+        CFRetain(pixelBuffer);
+        CMFormatDescriptionRef outputFormatDescription = NULL;
+        CMVideoFormatDescriptionCreateForImageBuffer(kCFAllocatorDefault, pixelBuffer, &outputFormatDescription);
+        
+        [_tupu getLandmark:pixelBuffer smoothEnable:YES];
 
-    if (_tupu.isFace) {
-        self.stickerFilter.faces = @[_tupu.points];
-        self.landmarkFilter.faces = _tupu.points;
-        self.landmarkFilter.rect = _tupu.rect;
-    } else {
-        self.stickerFilter.faces = @[];
-        self.landmarkFilter.faces = @[];
-        self.landmarkFilter.rect = CGRectNull;
+        if (_tupu.isFace) {
+            self.stickerFilter.faces = @[_tupu.points];
+            self.landmarkFilter.faces = _tupu.points;
+            self.landmarkFilter.rect = _tupu.rect;
+        } else {
+            self.stickerFilter.faces = @[];
+            self.landmarkFilter.faces = @[];
+            self.landmarkFilter.rect = CGRectNull;
+        }
+        CFRelease(pixelBuffer);
+        [buffer unlock];
     }
-    CFRelease(pixelBuffer);
-    [buffer unlock];
 }
 
 
