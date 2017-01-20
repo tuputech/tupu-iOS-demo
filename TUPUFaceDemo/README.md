@@ -26,16 +26,19 @@ TUPUSDK 是集成了面部关键点追踪和美颜等功能的基于GPUImage 的
 ```javascript
 #import <GPUImage/GPUImageFramework.h>
 #import <tupu-sdk/tupu.h>
+#import <TPRenderer/TPRenderer.h>
 
-//初始化tupusdk 关键点检测对象
-TUPULandmark *tupu = ...
+//tupusdk 关键点检测对象
+@property (nonatomic, strong) TPLandmarkFilter *landmarkFilter;
+
 //设置 GPUImageCamera 用来获取相机
-GPUImageCamera *videoCamera = ...
+@property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
+
 //设置SDK 内置美颜滤镜
-TPBeautifyFilter *beautifyFilter = ...
+@property (nonatomic, strong) TPBeautifyFilter *beautifyFilter;
 
 //设置贴纸滤镜
-TPStickerFilter *stickerFilter = ...
+@property (nonatomic, strong) TPStickerFilter *stickerFilter;
 
 //将美颜滤镜加入处理管线
 [videoCamera addTarget: beautifyFilter];
@@ -44,20 +47,22 @@ TPStickerFilter *stickerFilter = ...
 ...
 
 //实现TPRenderingDelegate 方法获取渲染前像素
-- (void)TPRendererWillBeginRender:(GPUImageFramebuffer *)buffer {
-[buffer lock];
-CVPixelBufferRef pixelBuffer = buffer.pixelBuffer;
-//使用tupusdk 检测对象进行关键点检测
-[tupu getLandmark:pixelBuffer smoothEnable:YES];
-if (tupu.isFace) {
-//更新贴纸关键点
-stickerFilter.faces = @[tupu.points];
+- (void)TPRenderer:(GPUImageOutput *)renderer WillBeginRender:(GPUImageFramebuffer *)buffer {
+if (renderer == self.beautifyFilter) {
+    [buffer lock];
+    CVPixelBufferRef pixelBuffer = buffer.pixelBuffer;
+    //使用tupusdk 检测对象进行关键点检测
+    [tupu getLandmark:pixelBuffer smoothEnable:YES];
+    if (tupu.isFace) {
+    //更新贴纸关键点
+    stickerFilter.faces = @[tupu.points];
+    }
+    [buffer unlock];
 }
-[buffer unlock];
 }
 
 //实现此方法获取最终渲染结果
-- (void)TPRendererDidFinishRender:(GPUImageFramebuffer *)buffer {
+- (void)TPRenderer:(GPUImageOutput *)renderer DidFinishRender:(GPUImageFramebuffer *)buffer {
 //编码，推流
 }
 
