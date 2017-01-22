@@ -32,7 +32,7 @@
     [super viewDidLoad];
     
     _tupu = [TUPULandmark new];
-    _tupu.boxScale = 0.23;
+    _tupu.boxScale = 0.2;
     if (![_tupu initWithModel:@"tupu_face_1_0_0.model"]) {
         NSLog(@"Failed to initialize model");
         return;
