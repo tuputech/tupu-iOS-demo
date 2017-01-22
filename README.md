@@ -1,6 +1,7 @@
 ##TUPUSDK
 TUPUSDK 是集成了面部关键点追踪和美颜等功能的基于GPUImage 的开发套件
 
+下载依赖库https://www.tuputech.com/tupu-sdk-demo-libs.zip 
 ##TUPUSDK 的特性
 
 * 人脸关键点追踪
