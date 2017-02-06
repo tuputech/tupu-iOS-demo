@@ -31,6 +31,10 @@
 		0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80A81E251572006A97EC /* TPLicenseHandle.m */; };
 		0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */; };
 		0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */; };
+		0AEB10BF1E458392005BE98F /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BA1E458392005BE98F /* GPUImage.framework */; };
+		0AEB10C01E458392005BE98F /* libTPSDKAuthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BB1E458392005BE98F /* libTPSDKAuthKit.a */; };
+		0AEB10C11E458392005BE98F /* TPRenderer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BC1E458392005BE98F /* TPRenderer.framework */; };
+		0AEB10C21E458392005BE98F /* tupu-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BE1E458392005BE98F /* tupu-sdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +82,11 @@
 		0AAC80A91E251572006A97EC /* TPNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNetConfig.h; sourceTree = "<group>"; };
 		0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = tupu_face_1_0_0.model; sourceTree = "<group>"; };
 		0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		0AEB10BA1E458392005BE98F /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		0AEB10BB1E458392005BE98F /* libTPSDKAuthKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTPSDKAuthKit.a; sourceTree = "<group>"; };
+		0AEB10BC1E458392005BE98F /* TPRenderer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPRenderer.framework; sourceTree = "<group>"; };
+		0AEB10BD1E458392005BE98F /* TPSDKAuthKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSDKAuthKit.h; sourceTree = "<group>"; };
+		0AEB10BE1E458392005BE98F /* tupu-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "tupu-sdk.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEB10BF1E458392005BE98F /* GPUImage.framework in Frameworks */,
 				0A63A4AE1E324DE400AF2B55 /* libTPSDKAuthKit.a in Frameworks */,
 				0A63A4AB1E324D6B00AF2B55 /* GPUImage.framework in Frameworks */,
+				0AEB10C11E458392005BE98F /* TPRenderer.framework in Frameworks */,
 				0A63A4AC1E324D6B00AF2B55 /* opencv2.framework in Frameworks */,
 				0A63A4A71E324D4500AF2B55 /* TPRenderer.framework in Frameworks */,
 				0A63A4A81E324D4500AF2B55 /* tupu-sdk.framework in Frameworks */,
@@ -94,7 +105,9 @@
 				0AAC808C1E2512A7006A97EC /* AssetsLibrary.framework in Frameworks */,
 				0AAC808A1E2512A0006A97EC /* CoreMedia.framework in Frameworks */,
 				0AAC80881E25129A006A97EC /* CoreGraphics.framework in Frameworks */,
+				0AEB10C21E458392005BE98F /* tupu-sdk.framework in Frameworks */,
 				0AAC80821E25124A006A97EC /* Foundation.framework in Frameworks */,
+				0AEB10C01E458392005BE98F /* libTPSDKAuthKit.a in Frameworks */,
 				0AAC80801E251244006A97EC /* OpenGLES.framework in Frameworks */,
 				0AAC807E1E25123E006A97EC /* Accelerate.framework in Frameworks */,
 			);
@@ -154,6 +167,11 @@
 		0AAC807C1E25123E006A97EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB10BA1E458392005BE98F /* GPUImage.framework */,
+				0AEB10BB1E458392005BE98F /* libTPSDKAuthKit.a */,
+				0AEB10BC1E458392005BE98F /* TPRenderer.framework */,
+				0AEB10BD1E458392005BE98F /* TPSDKAuthKit.h */,
+				0AEB10BE1E458392005BE98F /* tupu-sdk.framework */,
 				0A63A4AF1E324E1200AF2B55 /* TPSDKAuthKit.h */,
 				0A63A4AD1E324DE400AF2B55 /* libTPSDKAuthKit.a */,
 				0A63A4A91E324D6B00AF2B55 /* GPUImage.framework */,

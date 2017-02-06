@@ -44,6 +44,7 @@
     
     
     self.stickerFilter = [TPStickerFilter new];
+    self.stickerFilter.renderDelegate = self;
 
     
     self.filterView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
@@ -57,10 +58,24 @@
     
     self.beautifyFilter = [[TPBeautifyFilter alloc] init];
     
+    //when you need realtime data to push stream or something...
+    GPUImageRawDataOutput *rawOutput = [[GPUImageRawDataOutput alloc] init];
+    rawOutput.newFrameAvailableBlock = ^{
+        //GLUbyte* thisIsRawBytes = [rawOutput rawBytesForImage];
+    };
+    
+    /*
+        processing chain:
+        Camera --> Beautify --> Landmark --> Sticker --> Preview
+                                                    |
+                                                     --> PixelBuffer
+     */
     [self.videoCamera addTarget: self.beautifyFilter];
-    [self.beautifyFilter addTarget:self.landmarkFilter];
-    [self.landmarkFilter addTarget:self.stickerFilter];
-    [self.stickerFilter addTarget:self.filterView];
+    [self.beautifyFilter addTarget: self.landmarkFilter];
+    [self.landmarkFilter addTarget: self.stickerFilter];
+    [self.stickerFilter addTarget: self.filterView];
+    [self.stickerFilter addTarget:rawOutput];
+    
     
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     tapRecognizer.numberOfTapsRequired = 2;
@@ -93,6 +108,8 @@
 
         if (_tupu.isFace) {
             self.stickerFilter.faces = @[_tupu.points];
+            
+            //for debug purpose
             self.landmarkFilter.faces = _tupu.points;
             self.landmarkFilter.rect = _tupu.rect;
         } else {
@@ -104,10 +121,6 @@
         [buffer unlock];
     }
 }
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning {
