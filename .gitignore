@@ -2,3 +2,5 @@
 *.framework
 *.a
 TPSDKAuthKit.h
+TUPUFaceDemo.xcscheme
+xcschememanagement.plist

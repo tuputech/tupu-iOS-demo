@@ -13,7 +13,6 @@
 		0A63A4AB1E324D6B00AF2B55 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A4A91E324D6B00AF2B55 /* GPUImage.framework */; };
 		0A63A4AC1E324D6B00AF2B55 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A4AA1E324D6B00AF2B55 /* opencv2.framework */; };
 		0A63A4AE1E324DE400AF2B55 /* libTPSDKAuthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A4AD1E324DE400AF2B55 /* libTPSDKAuthKit.a */; };
-		0A63A4B11E324E3700AF2B55 /* TPStickerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A63A4B01E324E3700AF2B55 /* TPStickerResources.bundle */; };
 		0A63A4B21E32531900AF2B55 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A63A4A91E324D6B00AF2B55 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A63A4B31E32531E00AF2B55 /* TPRenderer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A63A4A51E324D4500AF2B55 /* TPRenderer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AAC80671E251215006A97EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80661E251215006A97EC /* main.m */; };
@@ -35,6 +34,11 @@
 		0AEB10C01E458392005BE98F /* libTPSDKAuthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BB1E458392005BE98F /* libTPSDKAuthKit.a */; };
 		0AEB10C11E458392005BE98F /* TPRenderer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BC1E458392005BE98F /* TPRenderer.framework */; };
 		0AEB10C21E458392005BE98F /* tupu-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB10BE1E458392005BE98F /* tupu-sdk.framework */; };
+		0AEB10FA1E49D90D005BE98F /* OptionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */; };
+		0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB11061E49F12A005BE98F /* SwitchCell.m */; };
+		0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB110A1E49F1D4005BE98F /* StepperCell.m */; };
+		0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB110F1E4AFDF7005BE98F /* close_icon.png */; };
+		0AEB111B1E4B1650005BE98F /* TPStickerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB111A1E4B1650005BE98F /* TPStickerResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,7 +63,6 @@
 		0A63A4AA1E324D6B00AF2B55 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		0A63A4AD1E324DE400AF2B55 /* libTPSDKAuthKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTPSDKAuthKit.a; sourceTree = "<group>"; };
 		0A63A4AF1E324E1200AF2B55 /* TPSDKAuthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPSDKAuthKit.h; sourceTree = "<group>"; };
-		0A63A4B01E324E3700AF2B55 /* TPStickerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TPStickerResources.bundle; sourceTree = "<group>"; };
 		0A83A4271E27CE2D008409DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0AAC80621E251215006A97EC /* TUPUFaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUPUFaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAC80661E251215006A97EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +90,14 @@
 		0AEB10BC1E458392005BE98F /* TPRenderer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TPRenderer.framework; sourceTree = "<group>"; };
 		0AEB10BD1E458392005BE98F /* TPSDKAuthKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSDKAuthKit.h; sourceTree = "<group>"; };
 		0AEB10BE1E458392005BE98F /* tupu-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "tupu-sdk.framework"; sourceTree = "<group>"; };
+		0AEB10F81E49D90D005BE98F /* OptionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionTableViewController.h; sourceTree = "<group>"; };
+		0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTableViewController.m; sourceTree = "<group>"; };
+		0AEB11051E49F12A005BE98F /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		0AEB11061E49F12A005BE98F /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		0AEB11091E49F1D4005BE98F /* StepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperCell.h; sourceTree = "<group>"; };
+		0AEB110A1E49F1D4005BE98F /* StepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperCell.m; sourceTree = "<group>"; };
+		0AEB110F1E4AFDF7005BE98F /* close_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_icon.png; sourceTree = "<group>"; };
+		0AEB111A1E4B1650005BE98F /* TPStickerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TPStickerResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +147,11 @@
 		0AAC80641E251215006A97EC /* TUPUFaceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB11081E49F1BF005BE98F /* cells */,
 				0AAC80681E251215006A97EC /* AppDelegate.h */,
 				0AAC80691E251215006A97EC /* AppDelegate.m */,
+				0AEB10F81E49D90D005BE98F /* OptionTableViewController.h */,
+				0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */,
 				0AAC806B1E251215006A97EC /* ViewController.h */,
 				0AAC806C1E251215006A97EC /* ViewController.mm */,
 				0AAC80A71E251572006A97EC /* TPLicenseHandle.h */,
@@ -152,7 +166,8 @@
 		0AAC80651E251215006A97EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A63A4B01E324E3700AF2B55 /* TPStickerResources.bundle */,
+				0AEB111A1E4B1650005BE98F /* TPStickerResources.bundle */,
+				0AEB110F1E4AFDF7005BE98F /* close_icon.png */,
 				0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */,
 				0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */,
 				0AAC806E1E251215006A97EC /* Main.storyboard */,
@@ -187,6 +202,17 @@
 				0AAC807D1E25123E006A97EC /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AEB11081E49F1BF005BE98F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB11051E49F12A005BE98F /* SwitchCell.h */,
+				0AEB11061E49F12A005BE98F /* SwitchCell.m */,
+				0AEB11091E49F1D4005BE98F /* StepperCell.h */,
+				0AEB110A1E49F1D4005BE98F /* StepperCell.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +278,10 @@
 				0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */,
 				0AAC80751E251215006A97EC /* LaunchScreen.storyboard in Resources */,
 				0AAC80721E251215006A97EC /* Assets.xcassets in Resources */,
+				0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */,
 				0AAC80701E251215006A97EC /* Main.storyboard in Resources */,
+				0AEB111B1E4B1650005BE98F /* TPStickerResources.bundle in Resources */,
 				0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */,
-				0A63A4B11E324E3700AF2B55 /* TPStickerResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */,
+				0AEB10FA1E49D90D005BE98F /* OptionTableViewController.m in Sources */,
 				0AAC806D1E251215006A97EC /* ViewController.mm in Sources */,
 				0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */,
+				0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */,
 				0AAC806A1E251215006A97EC /* AppDelegate.m in Sources */,
 				0AAC80671E251215006A97EC /* main.m in Sources */,
 			);
@@ -394,7 +424,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(BUILD_DIR)",
-					"$(PROJECT_DIR)/../ThirdLibs/",
+					"$(PROJECT_DIR)/../ThirdLibs/framework/",
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
@@ -427,7 +457,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(BUILD_DIR)",
-					"$(PROJECT_DIR)/../ThirdLibs/",
+					"$(PROJECT_DIR)/../ThirdLibs/framework/",
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;

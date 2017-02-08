@@ -6,20 +6,44 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F" : 9223372036854775807,
     "47811EFDA70CDAB69BE4663AF39659AE5DAFFD4E" : 9223372036854775807,
+<<<<<<< HEAD
+=======
+    "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F" : 9223372036854775807,
+    "7E1B0336C13F2DFBE0D1CC9E975AFBAF7EB81134" : 9223372036854775807,
+    "2BAD16E885E76D22FE4DA8972AC3503D3D7B0B0E" : 9223372036854775807,
+    "FC0A15E0D1A3D54FE07A947157AEA891A93C32C8" : 9223372036854775807,
+>>>>>>> 6ab656cac2a607f951553fb1992e7fab06b924db
     "457F7B8ADA13D5BDBBEC7795FBF4969FBC264A2C" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FC443430-E0E0-4386-A7D3-C6B3F59BC7B7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F" : "..",
     "47811EFDA70CDAB69BE4663AF39659AE5DAFFD4E" : "tupuSDK\/",
+<<<<<<< HEAD
     "457F7B8ADA13D5BDBBEC7795FBF4969FBC264A2C" : "tupu-iOS-demo\/"
+=======
+    "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F" : "..",
+    "7E1B0336C13F2DFBE0D1CC9E975AFBAF7EB81134" : "TPRenderer\/",
+    "2BAD16E885E76D22FE4DA8972AC3503D3D7B0B0E" : "TPSDKAuthKit\/",
+    "FC0A15E0D1A3D54FE07A947157AEA891A93C32C8" : "",
+    "457F7B8ADA13D5BDBBEC7795FBF4969FBC264A2C" : "TUPUFaceDemo\/"
+>>>>>>> 6ab656cac2a607f951553fb1992e7fab06b924db
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "TUPUFaceDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TUPUFaceDemo.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
+<<<<<<< HEAD
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tuputech\/tupu-iOS-demo.git",
+=======
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:DanWu\/tpsdkauthkit_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2BAD16E885E76D22FE4DA8972AC3503D3D7B0B0E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:DanWu\/tpfacedemo_ios.git",
+>>>>>>> 6ab656cac2a607f951553fb1992e7fab06b924db
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "457F7B8ADA13D5BDBBEC7795FBF4969FBC264A2C"
     },
@@ -29,9 +53,19 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "47811EFDA70CDAB69BE4663AF39659AE5DAFFD4E"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:DanWu\/tprenderer_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E1B0336C13F2DFBE0D1CC9E975AFBAF7EB81134"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:ios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D8C8273F7600FDE3A8C06D43BF2BF4852E827F9F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.tuputech.com:DanWu\/tupusdk_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC0A15E0D1A3D54FE07A947157AEA891A93C32C8"
     }
   ]
 }

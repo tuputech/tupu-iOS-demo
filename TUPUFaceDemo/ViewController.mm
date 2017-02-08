@@ -22,6 +22,13 @@
 
 @property (nonatomic, strong) TPLandmarkFilter *landmarkFilter;
 @property (nonatomic, strong) TPBeautifyFilter *beautifyFilter;
+
+@property (weak, nonatomic) IBOutlet UIView *debugView;
+@property (weak, nonatomic) IBOutlet UIImageView *debugImageView;
+@property (weak, nonatomic) IBOutlet UILabel *debugInfoView;
+@property (weak, nonatomic) IBOutlet UIView *HUDView;
+@property (weak, nonatomic) IBOutlet UIButton *close;
+
 @end
 
 @implementation ViewController{
@@ -32,12 +39,17 @@
     [super viewDidLoad];
     
     _tupu = [TUPULandmark new];
-    _tupu.boxScale = 0.2;
+    _tupu.debugMode = self.debugMode;
+    _tupu.boxScale = self.boxScale;
     if (![_tupu initWithModel:@"tupu_face_1_0_0.model"]) {
         NSLog(@"Failed to initialize model");
         return;
     }
 
+    if (!self.debugMode) {
+        self.debugView.hidden = YES;
+    }
+    
     self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionFront];
     self.videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     self.videoCamera.horizontallyMirrorFrontFacingCamera = YES;
@@ -50,11 +62,12 @@
     self.filterView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
     self.filterView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
     self.filterView.center = self.view.center;
-    [self.view addSubview:self.filterView];
+
+    [self.view insertSubview:self.filterView belowSubview:self.HUDView];
     
     self.landmarkFilter = [[TPLandmarkFilter alloc] init];
     self.landmarkFilter.renderDelegate = self;
-    self.landmarkFilter.debugMode = NO;
+    self.landmarkFilter.debugMode = self.debugMode;
     
     self.beautifyFilter = [[TPBeautifyFilter alloc] init];
     
@@ -79,8 +92,9 @@
     
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     tapRecognizer.numberOfTapsRequired = 2;
-    [self.filterView addGestureRecognizer:tapRecognizer];
+    [self.HUDView addGestureRecognizer:tapRecognizer];
     
+    [self.close addTarget:self action:@selector(handleClose:) forControlEvents:UIControlEventTouchUpInside];
     
     [TPStickersManager loadStickersWithCompletion:^(NSArray<TPSticker *> *stickers) {
         self.stickers = stickers;
@@ -88,6 +102,11 @@
     }];
     
     [self.videoCamera startCameraCapture];
+}
+
+- (void)handleClose:(id)sender {
+    [self.videoCamera stopCameraCapture];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void) handleTap:(id)sender {
@@ -104,7 +123,11 @@
         CMFormatDescriptionRef outputFormatDescription = NULL;
         CMVideoFormatDescriptionCreateForImageBuffer(kCFAllocatorDefault, pixelBuffer, &outputFormatDescription);
         
-        [_tupu getLandmark:pixelBuffer smoothEnable:YES];
+        [_tupu getLandmark:pixelBuffer smoothEnable:self.smoothEnabled];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.debugInfoView.text = _tupu.debugInfo;
+            [self.debugImageView setImage:_tupu.debugImage];
+        });
 
         if (_tupu.isFace) {
             self.stickerFilter.faces = @[_tupu.points];
