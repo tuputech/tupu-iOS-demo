@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A63A47B1E2DF24D00AF2B55 /* TPRenderer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A4171E2CF56400AF2B55 /* TPRenderer.framework */; };
-		0A63A4851E2DF81100AF2B55 /* libTPSDKAuthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A4841E2DF81100AF2B55 /* libTPSDKAuthKit.a */; };
 		0A63A48A1E2E22FC00AF2B55 /* TPRenderer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A63A4171E2CF56400AF2B55 /* TPRenderer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A63A48C1E2E24A900AF2B55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A48B1E2E24A900AF2B55 /* AVFoundation.framework */; };
-		0A63A48F1E2E26C400AF2B55 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A48D1E2E26C400AF2B55 /* GPUImage.framework */; };
-		0A63A4901E2E26C400AF2B55 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A48E1E2E26C400AF2B55 /* opencv2.framework */; };
-		0A63A4911E2E282400AF2B55 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A63A48D1E2E26C400AF2B55 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A63A49B1E31C68900AF2B55 /* TPStickerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A63A49A1E31C68900AF2B55 /* TPStickerResources.bundle */; };
 		0A63A49E1E3218BD00AF2B55 /* tupu-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A45F1E2DBEFD00AF2B55 /* tupu-sdk.framework */; };
 		0AAC80671E251215006A97EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80661E251215006A97EC /* main.m */; };
@@ -35,6 +31,10 @@
 		0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB11061E49F12A005BE98F /* SwitchCell.m */; };
 		0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB110A1E49F1D4005BE98F /* StepperCell.m */; };
 		0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB110F1E4AFDF7005BE98F /* close_icon.png */; };
+		49027F751E497DB0009B8715 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49027F731E497DB0009B8715 /* GPUImage.framework */; };
+		49027F761E497DB0009B8715 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49027F741E497DB0009B8715 /* opencv2.framework */; };
+		49027F861E499679009B8715 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49027F731E497DB0009B8715 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49027F881E499E16009B8715 /* libTPSDKAuthKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49027F871E499E16009B8715 /* libTPSDKAuthKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +66,13 @@
 			remoteGlobalIDString = 0A63A3881E2C810500AF2B55;
 			remoteInfo = TPRenderer;
 		};
+		49027F8D1E499EA8009B8715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A63A4561E2DBEFD00AF2B55 /* tupuSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9722801D3DD51B00D58925;
+			remoteInfo = "tupu-sdk";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,7 +83,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0A63A48A1E2E22FC00AF2B55 /* TPRenderer.framework in CopyFiles */,
-				0A63A4911E2E282400AF2B55 /* GPUImage.framework in CopyFiles */,
+				49027F861E499679009B8715 /* GPUImage.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +92,7 @@
 /* Begin PBXFileReference section */
 		0A63A4121E2CF56400AF2B55 /* TPRenderer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TPRenderer.xcodeproj; path = ../TPRenderer/TPRenderer.xcodeproj; sourceTree = "<group>"; };
 		0A63A4561E2DBEFD00AF2B55 /* tupuSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tupuSDK.xcodeproj; path = ../tupuSDK/tupuSDK.xcodeproj; sourceTree = "<group>"; };
-		0A63A4841E2DF81100AF2B55 /* libTPSDKAuthKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTPSDKAuthKit.a; path = "../Build/Products/Debug-iphoneos/libTPSDKAuthKit.a"; sourceTree = "<group>"; };
 		0A63A48B1E2E24A900AF2B55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		0A63A48D1E2E26C400AF2B55 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = ../ThirdLibs/GPUImage.framework; sourceTree = "<group>"; };
-		0A63A48E1E2E26C400AF2B55 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ThirdLibs/opencv2.framework; sourceTree = "<group>"; };
 		0A63A49A1E31C68900AF2B55 /* TPStickerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TPStickerResources.bundle; sourceTree = "<group>"; };
 		0A83A4271E27CE2D008409DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0AAC80621E251215006A97EC /* TUPUFaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUPUFaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,9 @@
 		0AEB11091E49F1D4005BE98F /* StepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperCell.h; sourceTree = "<group>"; };
 		0AEB110A1E49F1D4005BE98F /* StepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperCell.m; sourceTree = "<group>"; };
 		0AEB110F1E4AFDF7005BE98F /* close_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_icon.png; sourceTree = "<group>"; };
+		49027F731E497DB0009B8715 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = ../ThirdLibs/framework/GPUImage.framework; sourceTree = "<group>"; };
+		49027F741E497DB0009B8715 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ThirdLibs/framework/opencv2.framework; sourceTree = "<group>"; };
+		49027F871E499E16009B8715 /* libTPSDKAuthKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTPSDKAuthKit.a; path = "../../../../../Library/Developer/Xcode/DerivedData/TUPUSDK-agickqypruasmagbbvmlekuazfqz/Build/Products/Debug-iphoneos/libTPSDKAuthKit.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,14 +133,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49027F751E497DB0009B8715 /* GPUImage.framework in Frameworks */,
 				0A63A48C1E2E24A900AF2B55 /* AVFoundation.framework in Frameworks */,
-				0A63A4851E2DF81100AF2B55 /* libTPSDKAuthKit.a in Frameworks */,
 				0A63A49E1E3218BD00AF2B55 /* tupu-sdk.framework in Frameworks */,
+				49027F881E499E16009B8715 /* libTPSDKAuthKit.a in Frameworks */,
 				0A63A47B1E2DF24D00AF2B55 /* TPRenderer.framework in Frameworks */,
 				0AAC808C1E2512A7006A97EC /* AssetsLibrary.framework in Frameworks */,
 				0AAC808A1E2512A0006A97EC /* CoreMedia.framework in Frameworks */,
-				0A63A4901E2E26C400AF2B55 /* opencv2.framework in Frameworks */,
-				0A63A48F1E2E26C400AF2B55 /* GPUImage.framework in Frameworks */,
+				49027F761E497DB0009B8715 /* opencv2.framework in Frameworks */,
 				0AAC80881E25129A006A97EC /* CoreGraphics.framework in Frameworks */,
 				0AAC80821E25124A006A97EC /* Foundation.framework in Frameworks */,
 				0AAC80801E251244006A97EC /* OpenGLES.framework in Frameworks */,
@@ -216,10 +223,10 @@
 		0AAC807C1E25123E006A97EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A63A48D1E2E26C400AF2B55 /* GPUImage.framework */,
-				0A63A48E1E2E26C400AF2B55 /* opencv2.framework */,
+				49027F871E499E16009B8715 /* libTPSDKAuthKit.a */,
+				49027F731E497DB0009B8715 /* GPUImage.framework */,
+				49027F741E497DB0009B8715 /* opencv2.framework */,
 				0A63A48B1E2E24A900AF2B55 /* AVFoundation.framework */,
-				0A63A4841E2DF81100AF2B55 /* libTPSDKAuthKit.a */,
 				0A63A4561E2DBEFD00AF2B55 /* tupuSDK.xcodeproj */,
 				0A63A4121E2CF56400AF2B55 /* TPRenderer.xcodeproj */,
 				0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */,
@@ -258,6 +265,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				49027F8E1E499EA8009B8715 /* PBXTargetDependency */,
 				0A63A4781E2DF21F00AF2B55 /* PBXTargetDependency */,
 			);
 			name = TUPUFaceDemo;
@@ -276,7 +284,7 @@
 				TargetAttributes = {
 					0AAC80611E251215006A97EC = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 69GDDT3FCQ;
+						DevelopmentTeam = 45UMHTVC2V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -372,6 +380,11 @@
 			isa = PBXTargetDependency;
 			name = TPRenderer;
 			targetProxy = 0A63A4771E2DF21F00AF2B55 /* PBXContainerItemProxy */;
+		};
+		49027F8E1E499EA8009B8715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "tupu-sdk";
+			targetProxy = 49027F8D1E499EA8009B8715 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -489,13 +502,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69GDDT3FCQ;
+				DEVELOPMENT_TEAM = 45UMHTVC2V;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(BUILD_DIR)",
-					"$(PROJECT_DIR)/../ThirdLibs/",
+					"$(PROJECT_DIR)/../ThirdLibs/framework/",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../TPSDKAuthKit/TPSDKAuthKit";
 				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
@@ -522,13 +535,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69GDDT3FCQ;
+				DEVELOPMENT_TEAM = 45UMHTVC2V;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(BUILD_DIR)",
-					"$(PROJECT_DIR)/../ThirdLibs/",
+					"$(PROJECT_DIR)/../ThirdLibs/framework/",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../TPSDKAuthKit/TPSDKAuthKit";
 				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
