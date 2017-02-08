@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic, assign) BOOL smoothEnabled;
+@property(nonatomic, assign) BOOL debugMode;
+@property(nonatomic, assign) float boxScale;
 
 @end
 

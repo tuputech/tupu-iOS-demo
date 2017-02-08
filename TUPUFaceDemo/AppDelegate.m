@@ -18,14 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // request tupu sdk license.
-//    if ([TPLicenseHandle needLicenseForNet]) {
-//        NSLog(@"request license");
-//        [TPLicenseHandle licenseFromNetworkWithCompletion:^(bool license, NSDate *expire) {
-//            if (license) {
-//                NSLog(@"License request success %@", expire);
-//            }
-//        }];
-//    }
+    if ([TPLicenseHandle needLicenseForNet]) {
+        NSLog(@"request license");
+        [TPLicenseHandle licenseFromNetworkWithCompletion:^(bool license, NSDate *expire) {
+            if (license) {
+                NSLog(@"License request success %@", expire);
+            }
+        }];
+    }
     return YES;
 }
 

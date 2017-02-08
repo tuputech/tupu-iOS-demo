@@ -31,6 +31,10 @@
 		0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80A81E251572006A97EC /* TPLicenseHandle.m */; };
 		0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */; };
 		0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */; };
+		0AEB10FA1E49D90D005BE98F /* OptionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */; };
+		0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB11061E49F12A005BE98F /* SwitchCell.m */; };
+		0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB110A1E49F1D4005BE98F /* StepperCell.m */; };
+		0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB110F1E4AFDF7005BE98F /* close_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +112,13 @@
 		0AAC80A91E251572006A97EC /* TPNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNetConfig.h; sourceTree = "<group>"; };
 		0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = tupu_face_1_0_0.model; sourceTree = "<group>"; };
 		0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		0AEB10F81E49D90D005BE98F /* OptionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionTableViewController.h; sourceTree = "<group>"; };
+		0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTableViewController.m; sourceTree = "<group>"; };
+		0AEB11051E49F12A005BE98F /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		0AEB11061E49F12A005BE98F /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		0AEB11091E49F1D4005BE98F /* StepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperCell.h; sourceTree = "<group>"; };
+		0AEB110A1E49F1D4005BE98F /* StepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperCell.m; sourceTree = "<group>"; };
+		0AEB110F1E4AFDF7005BE98F /* close_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +181,11 @@
 		0AAC80641E251215006A97EC /* TUPUFaceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB11081E49F1BF005BE98F /* cells */,
 				0AAC80681E251215006A97EC /* AppDelegate.h */,
 				0AAC80691E251215006A97EC /* AppDelegate.m */,
+				0AEB10F81E49D90D005BE98F /* OptionTableViewController.h */,
+				0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */,
 				0AAC806B1E251215006A97EC /* ViewController.h */,
 				0AAC806C1E251215006A97EC /* ViewController.mm */,
 				0AAC80A71E251572006A97EC /* TPLicenseHandle.h */,
@@ -186,6 +200,7 @@
 		0AAC80651E251215006A97EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AEB110F1E4AFDF7005BE98F /* close_icon.png */,
 				0A63A49A1E31C68900AF2B55 /* TPStickerResources.bundle */,
 				0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */,
 				0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */,
@@ -215,6 +230,17 @@
 				0AAC807D1E25123E006A97EC /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AEB11081E49F1BF005BE98F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB11051E49F12A005BE98F /* SwitchCell.h */,
+				0AEB11061E49F12A005BE98F /* SwitchCell.m */,
+				0AEB11091E49F1D4005BE98F /* StepperCell.h */,
+				0AEB110A1E49F1D4005BE98F /* StepperCell.m */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +341,7 @@
 				0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */,
 				0AAC80751E251215006A97EC /* LaunchScreen.storyboard in Resources */,
 				0AAC80721E251215006A97EC /* Assets.xcassets in Resources */,
+				0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */,
 				0AAC80701E251215006A97EC /* Main.storyboard in Resources */,
 				0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */,
 				0A63A49B1E31C68900AF2B55 /* TPStickerResources.bundle in Resources */,
@@ -328,8 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */,
+				0AEB10FA1E49D90D005BE98F /* OptionTableViewController.m in Sources */,
 				0AAC806D1E251215006A97EC /* ViewController.mm in Sources */,
 				0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */,
+				0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */,
 				0AAC806A1E251215006A97EC /* AppDelegate.m in Sources */,
 				0AAC80671E251215006A97EC /* main.m in Sources */,
 			);
