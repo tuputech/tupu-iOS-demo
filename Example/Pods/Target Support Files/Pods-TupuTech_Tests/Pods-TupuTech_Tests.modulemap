@@ -1,0 +1,6 @@
+framework module Pods_TupuTech_Tests {
+  umbrella header "Pods-TupuTech_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
