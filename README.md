@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/TupuTech.svg?style=flat)](http://cocoapods.org/pods/TupuTech)
 [![Platform](https://img.shields.io/cocoapods/p/TupuTech.svg?style=flat)](http://cocoapods.org/pods/TupuTech)
 
-## Demo
+## 运行Demo
 
 clone整个仓库之后，进入到Example，执行
 
@@ -21,22 +21,15 @@ pod install --no-repo-update (推荐)
 
 ```
 
-## 通过 CocoaPods 集成
-
-TupuTech is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "TupuTech"
-```
 ## iOS 集成 SDK
+### [申请appkey和secret](https://www.tuputech.com/register)  
 ### [通过 CocoaPods 集成](./document/cocoapods.md)
 ### [手动集成](./document/manually.md)
 ### [下载 SDK]()
 
 
 
-## SDK使用
+## API文档
 
 [SDK使用](./document/iOS SDK API.md)
 
