@@ -21,7 +21,7 @@ pod install --no-repo-update (推荐)
 
 ```
 
-## 安装
+## 通过 CocoaPods 集成
 
 TupuTech is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -29,6 +29,16 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "TupuTech"
 ```
+## iOS 集成 SDK
+### [通过 CocoaPods 集成](./document/cocoapods.md)
+### [手动集成](./document/manually.md)
+### [下载 SDK]()
+
+
+
+## SDK使用
+
+[SDK使用](./document/iOS SDK API.md)
 
 ## SDK问题反馈
 
