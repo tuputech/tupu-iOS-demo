@@ -528,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45UMHTVC2V;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TupuTech/TupuTech-Prefix.pch";
 				INFOPLIST_FILE = "TupuTech/TupuTech-Info.plist";
@@ -544,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45UMHTVC2V;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TupuTech/TupuTech-Prefix.pch";
 				INFOPLIST_FILE = "TupuTech/TupuTech-Info.plist";

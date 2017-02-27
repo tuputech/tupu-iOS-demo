@@ -7,9 +7,7 @@
 //
 
 #import "TPViewController.h"
-//#import <TupuTech/TPTechSDK.h>
-#import <TupuTech/TPRender.h>
-#import <TupuTech/TPFaceMark.h>
+#import <TupuTech/TPTechSDK.h>
 
 
 @interface TPViewController ()
