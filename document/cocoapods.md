@@ -42,7 +42,7 @@ id<TPSDKAuthInterface> authService = [TPTechSDK createTPAuthService];
 	
 	
 第一种，开发者使用TupuTech SDK提供的autoInstallLicenseBySDKWithAppkey方法：
-	> 这种用起来简单，但是有泄漏app secret的风险。
+> 这种用起来简单，但是有泄漏app secret的风险。
 	
 	
 ```
