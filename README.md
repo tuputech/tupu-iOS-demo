@@ -1,4 +1,4 @@
-# [广州图谱科技](https://www.tuputech.com/)
+# [广州图普科技](https://www.tuputech.com/)
 
 [![Version](https://img.shields.io/cocoapods/v/TupuTech.svg?style=flat)](http://cocoapods.org/pods/TupuTech)
 [![License](https://img.shields.io/cocoapods/l/TupuTech.svg?style=flat)](http://cocoapods.org/pods/TupuTech)
@@ -38,7 +38,7 @@ SDK问题反馈邮箱：
 
 SDK问题反馈QQ群：
 
-![二维码](http://olvbg9kpu.bkt.clouddn.com/%E5%9B%BE%E8%B0%B1%E7%A7%91%E6%8A%80SDK%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88%E7%BE%A4%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
+![二维码](http://olvbg9kpu.bkt.clouddn.com/tuputech_SDK_QQ.jpg)
 
 ## License
 
