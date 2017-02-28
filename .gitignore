@@ -4,3 +4,9 @@ TPSDKAuthKit.h
 TUPUFaceDemo.xcscheme
 xcschememanagement.plist
 UserInterfaceState.xcuserstate
+Podfile.lock
+contents.xcworkspacedata
+*.xcbkptlist
+TUPUFaceDemo.xcscmblueprint
+Manifest.lock
+Pods/

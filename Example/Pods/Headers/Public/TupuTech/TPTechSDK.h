@@ -1,1 +1,0 @@
-../../../../../TupuTech/Classes/TPTechSDK.h

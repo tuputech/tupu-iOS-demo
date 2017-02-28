@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A63A48C1E2E24A900AF2B55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63A48B1E2E24A900AF2B55 /* AVFoundation.framework */; };
+		0A63A49B1E31C68900AF2B55 /* TPStickerResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A63A49A1E31C68900AF2B55 /* TPStickerResources.bundle */; };
+		0AAC80671E251215006A97EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80661E251215006A97EC /* main.m */; };
+		0AAC806A1E251215006A97EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80691E251215006A97EC /* AppDelegate.m */; };
+		0AAC806D1E251215006A97EC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC806C1E251215006A97EC /* ViewController.mm */; };
+		0AAC80701E251215006A97EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC806E1E251215006A97EC /* Main.storyboard */; };
+		0AAC80721E251215006A97EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80711E251215006A97EC /* Assets.xcassets */; };
+		0AAC80751E251215006A97EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80731E251215006A97EC /* LaunchScreen.storyboard */; };
+		0AAC807E1E25123E006A97EC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC807D1E25123E006A97EC /* Accelerate.framework */; };
+		0AAC80801E251244006A97EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC807F1E251244006A97EC /* OpenGLES.framework */; };
+		0AAC80821E25124A006A97EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80811E25124A006A97EC /* Foundation.framework */; };
+		0AAC80881E25129A006A97EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80871E25129A006A97EC /* CoreGraphics.framework */; };
+		0AAC808A1E2512A0006A97EC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC80891E2512A0006A97EC /* CoreMedia.framework */; };
+		0AAC808C1E2512A7006A97EC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */; };
+		0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC80A81E251572006A97EC /* TPLicenseHandle.m */; };
+		0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */; };
+		0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */; };
+		0AEB10FA1E49D90D005BE98F /* OptionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */; };
+		0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB11061E49F12A005BE98F /* SwitchCell.m */; };
+		0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEB110A1E49F1D4005BE98F /* StepperCell.m */; };
+		0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEB110F1E4AFDF7005BE98F /* close_icon.png */; };
+		1140F0DAE7371F52140DF5F0 /* Pods_TUPUFaceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8344DC0C141AF5A01B07D7 /* Pods_TUPUFaceDemo.framework */; };
+		495AADA61E4AC0E100DC2BB9 /* StickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 495AADA51E4AC0E100DC2BB9 /* StickerCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AAC809F1E2513A6006A97EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A63A48B1E2E24A900AF2B55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0A63A49A1E31C68900AF2B55 /* TPStickerResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TPStickerResources.bundle; sourceTree = "<group>"; };
+		0A83A4271E27CE2D008409DD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0AAC80621E251215006A97EC /* TUPUFaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUPUFaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAC80661E251215006A97EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AAC80681E251215006A97EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AAC80691E251215006A97EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AAC806B1E251215006A97EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0AAC806C1E251215006A97EC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		0AAC806F1E251215006A97EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AAC80711E251215006A97EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AAC80741E251215006A97EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AAC80761E251215006A97EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AAC807D1E25123E006A97EC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0AAC807F1E251244006A97EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0AAC80811E25124A006A97EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AAC80871E25129A006A97EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AAC80891E2512A0006A97EC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0AAC80A71E251572006A97EC /* TPLicenseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLicenseHandle.h; sourceTree = "<group>"; };
+		0AAC80A81E251572006A97EC /* TPLicenseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLicenseHandle.m; sourceTree = "<group>"; };
+		0AAC80A91E251572006A97EC /* TPNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNetConfig.h; sourceTree = "<group>"; };
+		0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = tupu_face_1_0_0.model; sourceTree = "<group>"; };
+		0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		0AEB10F81E49D90D005BE98F /* OptionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionTableViewController.h; sourceTree = "<group>"; };
+		0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTableViewController.m; sourceTree = "<group>"; };
+		0AEB11051E49F12A005BE98F /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		0AEB11061E49F12A005BE98F /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		0AEB11091E49F1D4005BE98F /* StepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepperCell.h; sourceTree = "<group>"; };
+		0AEB110A1E49F1D4005BE98F /* StepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepperCell.m; sourceTree = "<group>"; };
+		0AEB110F1E4AFDF7005BE98F /* close_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_icon.png; sourceTree = "<group>"; };
+		495AADA41E4AC0E100DC2BB9 /* StickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickerCollectionViewCell.h; sourceTree = "<group>"; };
+		495AADA51E4AC0E100DC2BB9 /* StickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickerCollectionViewCell.m; sourceTree = "<group>"; };
+		506EC3FC00DED481ED9FD335 /* Pods-TUPUFaceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUPUFaceDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TUPUFaceDemo/Pods-TUPUFaceDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5A8344DC0C141AF5A01B07D7 /* Pods_TUPUFaceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TUPUFaceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62526315FB83E9C936B75A8 /* Pods-TUPUFaceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUPUFaceDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TUPUFaceDemo/Pods-TUPUFaceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AAC805F1E251215006A97EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A63A48C1E2E24A900AF2B55 /* AVFoundation.framework in Frameworks */,
+				0AAC808C1E2512A7006A97EC /* AssetsLibrary.framework in Frameworks */,
+				0AAC808A1E2512A0006A97EC /* CoreMedia.framework in Frameworks */,
+				0AAC80881E25129A006A97EC /* CoreGraphics.framework in Frameworks */,
+				0AAC80821E25124A006A97EC /* Foundation.framework in Frameworks */,
+				0AAC80801E251244006A97EC /* OpenGLES.framework in Frameworks */,
+				0AAC807E1E25123E006A97EC /* Accelerate.framework in Frameworks */,
+				1140F0DAE7371F52140DF5F0 /* Pods_TUPUFaceDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AAC80591E251215006A97EC = {
+			isa = PBXGroup;
+			children = (
+				0AAC80641E251215006A97EC /* TUPUFaceDemo */,
+				0AAC80631E251215006A97EC /* Products */,
+				0AAC807C1E25123E006A97EC /* Frameworks */,
+				59339888D2AB44BE0CE23E95 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0AAC80631E251215006A97EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC80621E251215006A97EC /* TUPUFaceDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AAC80641E251215006A97EC /* TUPUFaceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB11081E49F1BF005BE98F /* cells */,
+				0AAC80681E251215006A97EC /* AppDelegate.h */,
+				0AAC80691E251215006A97EC /* AppDelegate.m */,
+				0AEB10F81E49D90D005BE98F /* OptionTableViewController.h */,
+				0AEB10F91E49D90D005BE98F /* OptionTableViewController.m */,
+				0AAC806B1E251215006A97EC /* ViewController.h */,
+				0AAC806C1E251215006A97EC /* ViewController.mm */,
+				0AAC80A71E251572006A97EC /* TPLicenseHandle.h */,
+				0AAC80A81E251572006A97EC /* TPLicenseHandle.m */,
+				0AAC80A91E251572006A97EC /* TPNetConfig.h */,
+				495AADA11E4AC0A900DC2BB9 /* stickerGallery */,
+				0AAC80651E251215006A97EC /* Supporting Files */,
+				0A83A4271E27CE2D008409DD /* README.md */,
+			);
+			path = TUPUFaceDemo;
+			sourceTree = "<group>";
+		};
+		0AAC80651E251215006A97EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB110F1E4AFDF7005BE98F /* close_icon.png */,
+				0A63A49A1E31C68900AF2B55 /* TPStickerResources.bundle */,
+				0AAC80AD1E251CC8006A97EC /* lbpcascade_frontalface.xml */,
+				0AAC80AB1E251ADE006A97EC /* tupu_face_1_0_0.model */,
+				0AAC806E1E251215006A97EC /* Main.storyboard */,
+				0AAC80711E251215006A97EC /* Assets.xcassets */,
+				0AAC80731E251215006A97EC /* LaunchScreen.storyboard */,
+				0AAC80761E251215006A97EC /* Info.plist */,
+				0AAC80661E251215006A97EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AAC807C1E25123E006A97EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A63A48B1E2E24A900AF2B55 /* AVFoundation.framework */,
+				0AAC808B1E2512A7006A97EC /* AssetsLibrary.framework */,
+				0AAC80891E2512A0006A97EC /* CoreMedia.framework */,
+				0AAC80871E25129A006A97EC /* CoreGraphics.framework */,
+				0AAC80811E25124A006A97EC /* Foundation.framework */,
+				0AAC807F1E251244006A97EC /* OpenGLES.framework */,
+				0AAC807D1E25123E006A97EC /* Accelerate.framework */,
+				5A8344DC0C141AF5A01B07D7 /* Pods_TUPUFaceDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AEB11081E49F1BF005BE98F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB11051E49F12A005BE98F /* SwitchCell.h */,
+				0AEB11061E49F12A005BE98F /* SwitchCell.m */,
+				0AEB11091E49F1D4005BE98F /* StepperCell.h */,
+				0AEB110A1E49F1D4005BE98F /* StepperCell.m */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		495AADA11E4AC0A900DC2BB9 /* stickerGallery */ = {
+			isa = PBXGroup;
+			children = (
+				495AADA41E4AC0E100DC2BB9 /* StickerCollectionViewCell.h */,
+				495AADA51E4AC0E100DC2BB9 /* StickerCollectionViewCell.m */,
+			);
+			path = stickerGallery;
+			sourceTree = "<group>";
+		};
+		59339888D2AB44BE0CE23E95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D62526315FB83E9C936B75A8 /* Pods-TUPUFaceDemo.debug.xcconfig */,
+				506EC3FC00DED481ED9FD335 /* Pods-TUPUFaceDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AAC80611E251215006A97EC /* TUPUFaceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAC80791E251215006A97EC /* Build configuration list for PBXNativeTarget "TUPUFaceDemo" */;
+			buildPhases = (
+				1DA73C9C4F1AFF2F712FF5D0 /* [CP] Check Pods Manifest.lock */,
+				0AAC805E1E251215006A97EC /* Sources */,
+				0AAC805F1E251215006A97EC /* Frameworks */,
+				0AAC80601E251215006A97EC /* Resources */,
+				0AAC809F1E2513A6006A97EC /* CopyFiles */,
+				8343CD2B688E656FEE90ECEE /* [CP] Embed Pods Frameworks */,
+				C2C25A1E01A01E3508A501EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TUPUFaceDemo;
+			productName = TUPUFaceDemo;
+			productReference = 0AAC80621E251215006A97EC /* TUPUFaceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AAC805A1E251215006A97EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = tupu;
+				TargetAttributes = {
+					0AAC80611E251215006A97EC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 45UMHTVC2V;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0AAC805D1E251215006A97EC /* Build configuration list for PBXProject "TUPUFaceDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AAC80591E251215006A97EC;
+			productRefGroup = 0AAC80631E251215006A97EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AAC80611E251215006A97EC /* TUPUFaceDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AAC80601E251215006A97EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAC80AC1E251B3A006A97EC /* tupu_face_1_0_0.model in Resources */,
+				0AAC80751E251215006A97EC /* LaunchScreen.storyboard in Resources */,
+				0AAC80721E251215006A97EC /* Assets.xcassets in Resources */,
+				0AEB11101E4AFDF7005BE98F /* close_icon.png in Resources */,
+				0AAC80701E251215006A97EC /* Main.storyboard in Resources */,
+				0AAC80AE1E251CC8006A97EC /* lbpcascade_frontalface.xml in Resources */,
+				0A63A49B1E31C68900AF2B55 /* TPStickerResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DA73C9C4F1AFF2F712FF5D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8343CD2B688E656FEE90ECEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TUPUFaceDemo/Pods-TUPUFaceDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C25A1E01A01E3508A501EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TUPUFaceDemo/Pods-TUPUFaceDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AAC805E1E251215006A97EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AEB110B1E49F1D4005BE98F /* StepperCell.m in Sources */,
+				0AEB10FA1E49D90D005BE98F /* OptionTableViewController.m in Sources */,
+				0AAC806D1E251215006A97EC /* ViewController.mm in Sources */,
+				0AAC80AA1E251572006A97EC /* TPLicenseHandle.m in Sources */,
+				495AADA61E4AC0E100DC2BB9 /* StickerCollectionViewCell.m in Sources */,
+				0AEB11071E49F12A005BE98F /* SwitchCell.m in Sources */,
+				0AAC806A1E251215006A97EC /* AppDelegate.m in Sources */,
+				0AAC80671E251215006A97EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AAC806E1E251215006A97EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AAC806F1E251215006A97EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AAC80731E251215006A97EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AAC80741E251215006A97EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AAC80771E251215006A97EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AAC80781E251215006A97EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AAC807A1E251215006A97EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62526315FB83E9C936B75A8 /* Pods-TUPUFaceDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45UMHTVC2V;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(BUILD_DIR)",
+					"$(PROJECT_DIR)/../ThirdLibs/framework/",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../TPSDKAuthKit/TPSDKAuthKit";
+				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(BUILD_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lstdc++",
+					"-Obj-C++",
+					"-framework",
+					tuputechSDK,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuputech.tupusdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AAC807B1E251215006A97EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506EC3FC00DED481ED9FD335 /* Pods-TUPUFaceDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45UMHTVC2V;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(BUILD_DIR)",
+					"$(PROJECT_DIR)/../ThirdLibs/framework/",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../TPSDKAuthKit/TPSDKAuthKit";
+				INFOPLIST_FILE = TUPUFaceDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(BUILD_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-lstdc++",
+					"-Obj-C++",
+					"-framework",
+					tuputechSDK,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuputech.tupusdk.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AAC805D1E251215006A97EC /* Build configuration list for PBXProject "TUPUFaceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAC80771E251215006A97EC /* Debug */,
+				0AAC80781E251215006A97EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAC80791E251215006A97EC /* Build configuration list for PBXNativeTarget "TUPUFaceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAC807A1E251215006A97EC /* Debug */,
+				0AAC807B1E251215006A97EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AAC805A1E251215006A97EC /* Project object */;
+}

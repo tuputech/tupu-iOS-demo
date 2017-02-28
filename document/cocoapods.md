@@ -5,10 +5,14 @@
 
 ### 步骤：
 
-#### 1. 在你项目的 Podfile 中添加以下代码	
+#### 1. 在你项目的 Podfile 中添加以下代码（务必记得use_frameworks!）
 
 ```ruby
-pod TupuTech
+use_frameworks!
+
+target 'TUPUFaceDemo' do
+  pod 'TupuTech', '~> 1.0.4'
+end
 ```
 #### 2. 执行 pod 安装命令
 

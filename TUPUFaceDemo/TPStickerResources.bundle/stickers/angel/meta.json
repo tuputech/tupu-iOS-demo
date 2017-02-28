@@ -1,0 +1,54 @@
+{
+    "version": 1,
+    "name": "angel",
+    "preview": "preview.jpg",
+    "audio": "angel_audio.mp3",
+    "items": [
+              {
+              "type": 1,
+              "alignPos": 0,
+              "scaleWidth": 0.8,
+              "scaleHight": 0,
+              "offsetX": 0,
+              "offsetY": 0.4,
+              "folder": "4cat",
+              "frames": 37,
+              "frameDuration": 90,
+              "width": 360,
+              "height": 423,
+              "triggerType": 1
+              },
+              {
+              "type": 0,
+              "scaleWidth": 3.5,
+              "scaleHight": 3.5,
+              "offsetX": -0.5,
+              "offsetY": -1.7,
+              "alignIndexes": [
+                               21, 41, 51
+                               ],
+              "folder": "grass",
+              "frames": 61,
+              "frameDuration": 100,
+              "width": 351,
+              "height": 159,
+              "triggerType": 1
+              },
+              {
+              "type": 0,
+              "scaleWidth": 2.0,
+              "scaleHight": 0,
+              "offsetX": 0,
+              "offsetY": 0,
+              "alignIndexes": [
+                               53, 82, 57
+                               ],
+              "folder": "yuan",
+              "frames": 61,
+              "frameDuration": 100,
+              "width": 182,
+              "height": 44,
+              "triggerType": 1
+              }
+              ]
+}

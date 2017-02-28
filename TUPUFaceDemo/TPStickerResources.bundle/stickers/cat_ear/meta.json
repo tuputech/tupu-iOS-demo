@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "name": "cat_ear",
+    "preview": "preview.jpg",
+    "audio": "angel_audio.mp3",
+    "items": [
+              {
+              "type": 0,
+              "scaleWidth":2.0,
+              "scaleHight": 0,
+              "offsetX": 0,
+              "offsetY": -2.0,
+              "alignIndexes": [
+                               29, 82, 45
+                               ],
+              "folder": "ear",
+              "frames": 80,
+              "frameDuration": 100,
+              "width": 320,
+              "height": 179,
+              "triggerType": 1
+              },
+              {
+              "type": 0,
+              "scaleWidth": 2.0,
+              "scaleHight": 0,
+              "offsetX": 0,
+              "offsetY": 0,
+              "alignIndexes": [
+                               53, 82, 57
+                               ],
+              "folder": "moustache",
+              "frames": 80,
+              "frameDuration": 100,
+              "width": 320,
+              "height": 104,
+              "triggerType": 1
+              }
+              ]
+}

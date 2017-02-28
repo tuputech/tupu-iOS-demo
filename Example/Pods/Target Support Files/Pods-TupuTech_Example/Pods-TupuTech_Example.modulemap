@@ -1,6 +1,0 @@
-framework module Pods_TupuTech_Example {
-  umbrella header "Pods-TupuTech_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
