@@ -1,11 +1,12 @@
 #手动集成
 *Bugtags SDK 全部版本均采用 HTTPS 协议进行网络传输，完全符合 Apple ATS 安全标准，请放心使用。*
 
-### 注意：
-
 ### 步骤：
 #### 1.下载[SDK压缩包](https://www.tuputech.com/)并解压缩
-#### 2. 将 GPUImage.framework 和 framework 文件夹拖到 Xcode 项目中
+#### 2. 将 GPUImage.framework 和 tuputechSDK.framework 文件夹拖到 Xcode 项目中；确认在应用设置Build Phases -> Link Binary With Libraries 里存在：
+* GPUImage.framework
+* tuputechSDK.framework
+
 #### 3. 在 AppDelegate.m 中导入头文件
 
 ```
