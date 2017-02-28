@@ -25,13 +25,10 @@ pod install --no-repo-update (推荐)
 ### [申请appkey和secret](https://www.tuputech.com/register)  
 ### [通过 CocoaPods 集成](./document/cocoapods.md)
 ### [手动集成](./document/manually.md)
-### [下载 SDK]()
-
-
 
 ## API文档
 
-[SDK使用](./document/iOS SDK API.md)
+### [iOS API文档](./document/SDK_API_iOS.md)
 
 ## SDK问题反馈
 
